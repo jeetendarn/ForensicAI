@@ -1,0 +1,11 @@
+import axios from "axios";
+
+export const getTimeline =
+(id) => {
+
+ return axios.get(
+  `http://127.0.0.1:8000/timeline/${id}`
+ )
+ .then(res => res.data);
+
+};
