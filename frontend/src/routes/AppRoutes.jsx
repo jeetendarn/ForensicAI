@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import AdminDashboard from "../pages/AdminDashboard";
-
+import InvestigatorDashboard from "../pages/InvestigatorDashboard";
 export default function AppRoutes() {
 
   return (
@@ -24,6 +24,10 @@ export default function AppRoutes() {
 <Route
   path="/dashboard"
   element={<AdminDashboard />}
+/>
+<Route
+ path="/investigator"
+ element={<InvestigatorDashboard />}
 />
 
       </Routes>

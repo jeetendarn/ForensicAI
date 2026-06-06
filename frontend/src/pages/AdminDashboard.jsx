@@ -1034,7 +1034,7 @@ const handleCreateCase = async () => {
 
   )
 }
-{/* 
+{
 
         <div className="bg-[#111827] rounded-xl p-6 mt-8">
 
@@ -1086,7 +1086,7 @@ const handleCreateCase = async () => {
           </table>
 
         </div>
-   */}
+   }
     </div>
             
     </div>
