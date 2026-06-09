@@ -29,6 +29,7 @@ import {
  getTimeline
 }
 from "../services/timelineService";
+import { useNavigate } from "react-router-dom";
 
 
 export default function AdminDashboard() {
@@ -70,6 +71,14 @@ useState(false);
 
 const [showTimeline, setShowTimeline] =
 useState(false);
+const navigate = useNavigate();
+
+const handleLogout = () => {
+  localStorage.removeItem("token");
+  navigate("/");
+};
+
+
 const viewFindings = async(id) => {
 
   console.log(
@@ -350,10 +359,12 @@ const handleCreateCase = async () => {
   Reports
 </div>
 
-          <div className="hover:text-red-400 cursor-pointer">
-            Logout
-          </div>
-
+      <div
+  onClick={handleLogout}
+  className="hover:text-red-400 cursor-pointer"
+>
+  Logout
+</div>
         </div>
 
       </div>

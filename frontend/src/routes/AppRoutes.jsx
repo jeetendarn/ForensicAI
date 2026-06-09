@@ -4,6 +4,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import AdminDashboard from "../pages/AdminDashboard";
 import InvestigatorDashboard from "../pages/InvestigatorDashboard";
+import StudentDashboard from "../pages/StudentDashboard";
 export default function AppRoutes() {
 
   return (
@@ -28,6 +29,11 @@ export default function AppRoutes() {
 <Route
  path="/investigator"
  element={<InvestigatorDashboard />}
+/>
+
+<Route
+  path="/student"
+  element={<StudentDashboard />}
 />
 
       </Routes>
